@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mayur Patil - Portfolio website. Full-stack software engineer specializing in modern web experiences, high-performance backend architectures, and elegant UI/UX design.">
+    <meta name="keywords" content="Mayur Patil, Portfolio, Full-Stack Engineer, Web Developer, React Developer, Node.js, Python, JavaScript, CSS, HTML">
+    <meta name="author" content="Mayur Patil">
+    <title>Mayur Patil | Full-Stack Software Engineer Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background grid & glow effects -->
+    <div class="bg-grid"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <!-- Header Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                Mayur<span>.</span>
+            </a>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-right">
+                <a href="#contact" class="btn btn-nav btn-gradient">Get In Touch</a>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <line x1="4" y1="6" x2="20" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="4" y1="12" x2="20" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="4" y1="18" x2="20" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge animate-fade-in">
+                        <span class="pulse-dot"></span> Available for Opportunities
+                    </div>
+                    <h1 class="animate-fade-in-up">
+                        Hello, I'm <span class="text-gradient">Mayur Patil</span>
+                    </h1>
+                    <h2 class="typing-container animate-fade-in-up">
+                        I am a <span id="typing-text" class="text-gradient-alt"></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-desc animate-fade-in-up">
+                        Full-Stack Developer, Data Enthusiast, and Tech Explorer pursuing a Bachelor of Engineering (BE) in Computer Engineering at Savitribai Phule Pune University (SPPU).
+                    </p>
+                    <div class="hero-actions animate-fade-in-up">
+                        <a href="#projects" class="btn btn-primary btn-glow">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual animate-fade-in">
+                    <div class="avatar-card-wrapper">
+                        <div class="avatar-glow-ring"></div>
+                        <div class="avatar-card">
+                            <img src="avatar.png" alt="Mayur avatar" class="avatar-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-down" aria-label="Scroll to About section">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">My Journey & Philosophy</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>Who I Am</h3>
+                        <p>
+                            I'm a Full-Stack Developer and Computer Engineering student at Savitribai Phule Pune University (SPPU). My passion lies in crafting highly interactive user interfaces, exploring data analytics, and researching new technologies.
+                        </p>
+                        <p>
+                            With a strong computer science foundation and a creative design perspective, I focus on coding clean responsive layouts, utilizing modern styling architectures, and working on analytical data workflows. I strive to build intuitive, accessible web systems that solve real-world problems.
+                        </p>
+                        
+                        <div class="about-info-grid">
+                            <div class="info-item">
+                                <span class="info-label">Location</span>
+                                <span class="info-val">Pune, India</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Availability</span>
+                                <span class="info-val">Open to Work</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Specialty</span>
+                                <span class="info-val">Full-Stack Web Development</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <h3 class="stat-num">&lt; 1</h3>
+                            <p class="stat-desc">Year of Experience</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="stat-num">3</h3>
+                            <p class="stat-desc">Completed Projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Expertise</span>
+                    <h2 class="section-title">My Technical Stack</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Frontend -->
+                    <div class="skills-category">
+                        <div class="category-header">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" class="category-icon text-cyan">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2 12 2"/>
+                                <polyline points="2 17 12 22 22 17"/>
+                                <polyline points="2 12 12 17 22 12"/>
+                            </svg>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">HTML5 / CSS3</span>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" data-progress="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript & TypeScript</span>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" data-progress="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">React.js & Next.js</span>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" data-progress="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Responsive Design</span>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" data-progress="90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend & Databases -->
+                    <div class="skills-category">
+                        <div class="category-header">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" class="category-icon text-violet">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                                <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/>
+                            </svg>
+                            <h3>Backend & Databases</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Node.js / Express</span>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" data-progress="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Java & Spring Boot</span>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" data-progress="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Python / FastAPI</span>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" data-progress="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">MongoDB & SQL</span>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" data-progress="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">RESTful APIs</span>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" data-progress="90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DevOps & Tools -->
+                    <div class="skills-category">
+                        <div class="category-header">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" class="category-icon text-orange">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                            </svg>
+                            <h3>DevOps & Tools</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Git & GitHub</span>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" data-progress="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Docker Containers</span>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" data-progress="75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">AWS / Cloud Hosting</span>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" data-progress="70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">CI/CD Workflows</span>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" data-progress="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Milestones</span>
+                    <h2 class="section-title">Professional Journey</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024 - 2027</div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Engineering (BE) - Computer Engineering</h3>
+                            <h4>Savitribai Phule Pune University (SPPU)</h4>
+                            <p>
+                                Currently pursuing a Bachelor of Engineering in Computer Engineering. Gaining core CS foundations in algorithms, database design, data structures, and object-oriented programming.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jan 2024 - Feb 2024</div>
+                        <div class="timeline-content">
+                            <h3>Web Development Intern</h3>
+                            <h4>CodeSoft</h4>
+                            <p>
+                                Completed a remote internship program. Built standard-compliant web pages, optimized script performance, and refined responsive layout properties.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jun 2023 - Jul 2023</div>
+                        <div class="timeline-content">
+                            <h3>Software Engineer Intern</h3>
+                            <h4>NPIT Solutions</h4>
+                            <p>
+                                Managed frontend web design and development, built custom landing pages, and implemented reusable components while collaborating on backend script development and debugging modules.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section certifications-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Credentials</span>
+                    <h2 class="section-title">Licenses & Certifications</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="certs-grid">
+                    <!-- Cert 1 -->
+                    <div class="cert-card glass-card">
+                        <div class="cert-header">
+                            <div class="cert-icon-wrapper text-cyan">
+                                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                            </div>
+                            <div class="cert-title-group">
+                                <h3>Data Analytics Job Simulation</h3>
+                                <h4>Deloitte Australia (via Forage)</h4>
+                            </div>
+                        </div>
+                        <div class="cert-body">
+                            <p class="cert-date">Issued Jul 2025</p>
+                            <p class="cert-id">Credential ID: <span>BFKLM8irK8NBsykZc</span></p>
+                        </div>
+                        <div class="cert-footer">
+                            <a href="https://www.theforage.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-cert">
+                                <span>Show Credential</span>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="cert-card glass-card">
+                        <div class="cert-header">
+                            <div class="cert-icon-wrapper text-violet">
+                                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            </div>
+                            <div class="cert-title-group">
+                                <h3>Web Designing & Web Development</h3>
+                                <h4>NP IT SOLUTIONS</h4>
+                            </div>
+                        </div>
+                        <div class="cert-body">
+                            <p class="cert-date">Issued Jun 2023 · Expired Jul 2023</p>
+                            <p class="cert-id">Recipient: <span>Mayur Arjun Patil</span></p>
+                        </div>
+                        <div class="cert-footer">
+                            <a href="https://www.npitsolutions.in" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-cert">
+                                <span>Show Credential</span>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Case Studies</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="project_portfolio.png" alt="Portfolio Screenshot" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/mayurpatil2005/Portfolio-" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View Code on GitHub">
+                                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    </a>
+                                    <a href="https://portfolio-mayur-patil.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View Live Website">
+                                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag-name">Frontend Design</span>
+                            <h3>Glassmorphic Portfolio</h3>
+                            <p>A high-end, responsive personal portfolio website showcasing web technologies, credentials, and interactive milestones. Built with custom CSS animations.</p>
+                            <div class="project-tech-tags">
+                                <span>HTML5</span>
+                                <span>CSS Grid</span>
+                                <span>JavaScript</span>
+                                <span>SEO</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="project_travel.png" alt="Travel Booking Screenshot" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/mayurpatil2005/Travel-Booking" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View Code on GitHub">
+                                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    </a>
+                                    <a href="/travel-booking/" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View Live Website">
+                                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag-name">Web Application</span>
+                            <h3>Travel Booking System</h3>
+                            <p>An interactive travel booking landing page and reservation interface enabling travelers to browse destinations, inspect flight options, and check trip availability.</p>
+                            <div class="project-tech-tags">
+                                <span>HTML5</span>
+                                <span>CSS Flexbox</span>
+                                <span>Responsive Layout</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="project_calculator.png" alt="Calculator Web App" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/mayurpatil2005/calculator-" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View Code on GitHub">
+                                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    </a>
+                                    <a href="javascript:void(0)" id="open-calc-btn" class="project-link-icon" aria-label="View Live Website">
+                                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag-name">JavaScript Logic</span>
+                            <h3>Calculator Web App</h3>
+                            <p>A lightweight, elegant calculator application that evaluates mathematical expressions dynamically. Styled with custom hover feedback and keyboard responsiveness.</p>
+                            <div class="project-tech-tags">
+                                <span>HTML5</span>
+                                <span>CSS Layouts</span>
+                                <span>JavaScript ES6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Let's Build Something Great</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <h3>Connect With Me</h3>
+                        <p class="contact-desc">
+                            Have a project in mind, an opportunity to share, or just want to connect? Drop a message and I'll get back to you within 24 hours.
+                        </p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon text-cyan">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                </div>
+                                <div class="detail-text">
+                                    <h4>Email</h4>
+                                    <a href="mailto:mayur16.2005@gmail.com">mayur16.2005@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon text-violet">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div class="detail-text">
+                                    <h4>Location</h4>
+                                    <span>Pune District, Maharashtra, India</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/mayurpatil2005" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/mayur-patil-b37675246" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-card">
+                        <form id="contact-form" autocomplete="off">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="form-name" name="name" required placeholder=" ">
+                                    <label for="form-name">Your Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="form-email" name="email" required placeholder=" ">
+                                    <label for="form-email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="form-subject" name="subject" required placeholder=" ">
+                                <label for="form-subject">Subject</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="form-message" name="message" required rows="5" placeholder=" "></textarea>
+                                <label for="form-message">Your Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit btn-glow">
+                                <span>Send Message</span>
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" class="submit-icon"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                            </button>
+                            <div class="form-message-feedback" id="form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2026 Mayur Patil. All Rights Reserved. Built with custom HTML, CSS, and JS.</p>
+            <a href="#hero" class="back-to-top" aria-label="Scroll back to top">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Calculator Live Demo Modal -->
+    <div class="calc-modal-backdrop" id="calc-backdrop">
+        <div class="calculator-modal glass-card">
+            <div class="calc-header">
+                <h3>Interactive Calculator</h3>
+                <button class="close-calc" id="close-calc" aria-label="Close Calculator">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            
+            <div class="calc-screen">
+                <div class="calc-history" id="calc-history"></div>
+                <div class="calc-display" id="calc-display">0</div>
+            </div>
+            
+            <div class="calc-keys">
+                <button class="key text-orange" data-action="clear">AC</button>
+                <button class="key text-orange" data-action="delete">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path><line x1="18" y1="9" x2="12" y2="15"></line><line x1="12" y1="9" x2="18" y2="15"></line></svg>
+                </button>
+                <button class="key text-orange" data-val="%">%</button>
+                <button class="key text-cyan" data-val="/">/</button>
+                
+                <button class="key" data-val="7">7</button>
+                <button class="key" data-val="8">8</button>
+                <button class="key" data-val="9">9</button>
+                <button class="key text-cyan" data-val="*">*</button>
+                
+                <button class="key" data-val="4">4</button>
+                <button class="key" data-val="5">5</button>
+                <button class="key" data-val="6">6</button>
+                <button class="key text-cyan" data-val="-">-</button>
+                
+                <button class="key" data-val="1">1</button>
+                <button class="key" data-val="2">2</button>
+                <button class="key" data-val="3">3</button>
+                <button class="key text-cyan" data-val="+">+</button>
+                
+                <button class="key" data-val="0">0</button>
+                <button class="key" data-val=".">.</button>
+                <button class="key key-double btn-primary" data-action="calculate">=</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Logic Script -->
+    <script src="script.js"></script>
+</body>
+</html>
